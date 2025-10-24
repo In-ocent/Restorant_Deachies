@@ -14,13 +14,12 @@ import HealthGoals from "./Component/Pages/HealthGoals.jsx";
 import HelpSupport from "./Component/Pages/HelpSupport.jsx";
 import HomePagePrice from "./Component/Pages/HomePagePrice.jsx";
 import Subscription from "./Component/Pages/Subscription.jsx";
-import Navbar from "./Component/Pages/Navbar.jsx";
+
 
 export default function App() {
   return (
     <Router>
-      {/*  Navbar goes OUTSIDE the Routes */}
-      <Navbar />
+     
 
       <Routes>
         {/* ====== AUTHENTICATION ====== */}
