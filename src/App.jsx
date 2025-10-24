@@ -23,7 +23,7 @@ export default function App() {
 
       <Routes>
         {/* ====== AUTHENTICATION ====== */}
-        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="" element={<SignUpPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forget-password" element={<ForgetPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
