@@ -1,0 +1,112 @@
+/* Layout container */
+.account-setup-section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+
+/* Main title section */
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form-control{
+   background: rgb(236, 241, 236);
+}
+/* Title Icon */
+.title-img {
+  width: 3.2rem;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form container */
+.fomin-input {
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+}
+
+/* Input + Select fields */
+.form-input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 8px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Button */
+.back-btn-info {
+  border: 1px solid #222;     /* use px, not rem for borders */
+  outline: none;              /* remove default focus outline if needed */
+  color: black;
+  font-weight: 600;
+  border-radius: 8px;
+  height: 3rem;
+  width: 7rem;
+  background: transparent;    
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-btn-info:hover {
+  transform: translateX(-2px);
+  background: #f3f3f3;       
+}
+
+.btn-next {
+  background: rgb(236, 13, 13);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  height: 3rem;
+    transition: transform 0.2s ease-in-out;
+    width: 7rem;
+  
+}
+
+.btn-next:hover {
+  background: rgb(154, 25, 25);
+  transform: translateX(2px);
+}
+
+/* Prevent text wrapping when needed */
+.no-break {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* section-drupdown */
+.section-drupdown{
+    border-radius: 50%;
+}
+
+.error-input {
+  border: 2px solid red !important;
+}
+
+
+

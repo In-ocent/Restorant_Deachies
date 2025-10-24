@@ -1,0 +1,192 @@
+/* Container */
+.dietary-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.dietary-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dietary-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.health-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.dietary-subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Sections */
+.dietary-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+/* Diet Card */
+.diet-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgb(226, 255, 226);
+    box-shadow: 1px 1px 2px #cccccc;
+}
+
+.diet-image {
+    flex: 0 0 100px;
+    margin-right: 15px;
+}
+
+.diet-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.diet-content {
+    flex: 1;
+}
+
+.diet-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.diet-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.diet-checkbox {
+    flex: 0 0 auto;
+
+}
+/* Base checkbox styling */
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000; /* Your original black border */
+    background: transparent; /* Your original transparent background */
+    cursor: pointer;
+    position: relative;
+    appearance: none; /* Remove default styling */
+    outline: none; /* Remove default focus outline */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+/* Custom checkmark using ::after */
+.checkbox-input:checked::after {
+    content: '✓'; /* Checkmark symbol */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #10b981; /* Green checkmark color, adjustable */
+}
+
+/* Hover state */
+.checkbox-input:hover {
+    border-color: #333; /* Darker border on hover */
+}
+
+/* Focus state for accessibility */
+.checkbox-input:focus {
+    border-color: #10b981; /* Highlight on focus */
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3); /* Subtle focus ring */
+}
+
+/* Optional: Disabled state */
+.checkbox-input:disabled {
+    border-color: #ccc;
+    background: #f9f9f9;
+    cursor: not-allowed;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Footer */
+.dietary-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-btn, .next-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn {
+    background: #ccc;
+}
+
+.next-btn {
+    background: #ff0000;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .dietary-container {
+        padding: 10px;
+    }
+
+    .diet-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .diet-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .diet-content {
+        margin-bottom: 10px;
+    }
+
+    .dietary-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back-btn, .next-btn {
+        width: 100%;
+    }
+}

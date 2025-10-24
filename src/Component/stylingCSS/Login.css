@@ -1,0 +1,34 @@
+:root {
+  --pink-100: #FCE4EC;
+  --pink-200: #F8BBD0;
+  --pink-300: #F48FB1;
+  --pink-400: #F06292;
+  --pink-500: #EC407A;
+  --pink-600: #D81B60;
+  --pink-700: #C2185B;
+  --pink-800: #AD1457;
+  --pink-900: #880E4F;
+
+  --red: #dc3545;
+  --red-100: #F8D7DA;
+  --red-200: #F5C2C7;
+  --red-300: #EFA9AF;
+  --red-400: #EA8F96;
+  --red-500: #E35D6A;
+  --red-600: #DC3545;
+  --red-700: #BB2D3B;
+  --red-800: #9A2532;
+  --red-900: #7A1D29;
+
+  --orange: #fd7e14;
+  --orange-100: #FFE5D0;
+  --orange-200: #FFCC9E;
+  --orange-300: #FFB36B;
+  --orange-400: #FF9A38;
+  --orange-500: #fd7e14;
+  --orange-600: #CC650F;
+}
+.error-input {
+  border: 1px solid #E94949 !important; /* Your red */
+  box-shadow: none !important;          /* Remove Bootstrap glow */
+}

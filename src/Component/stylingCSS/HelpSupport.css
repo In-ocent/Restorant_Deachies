@@ -1,0 +1,249 @@
+/* MAIN LAYOUT */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu-item.active,
+.menu-item:hover {
+  background: #e8f3e3;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-item p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.menu-item .icon {
+  font-size: 18px;
+  color: #333;
+}
+
+.menu hr {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+/* MAIN CONTENT */
+.content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.content-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ERROR BOX */
+.error-box {
+  margin-top: 40px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.border-icon{
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 47%;
+}
+
+.error-box h2 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.error-text {
+  color: #d9534f;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.error-icon {
+  font-size: 50px;
+  color: #aaa;
+  margin-bottom: 20px;
+
+
+}
+
+.retry-btn {
+  background: #d9534f;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background: #c82333;
+}
+
+
+/* ===================== RESPONSIVE STYLES ===================== */
+
+/* Tablets and Small Laptops (max-width: 992px) */
+@media (max-width: 992px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .error-box {
+    padding: 30px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    background: #fff;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .menu-item h3, .menu-item p {
+    display: none; /* Show only icons on mobile */
+  }
+
+  .menu-item .icon {
+    font-size: 20px;
+  }
+
+  .content {
+    padding: 15px;
+    margin-bottom: 70px; /* Avoid overlap from bottom sidebar */
+  }
+
+  .content-header h1 {
+    font-size: 18px;
+  }
+
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+  }
+
+  .error-box {
+    padding: 20px;
+  }
+
+  .error-icon {
+    font-size: 40px;
+  }
+
+  .retry-btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .content-header h1 {
+    font-size: 16px;
+  }
+
+  .error-icon {
+    font-size: 35px;
+  }
+
+  .retry-btn {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+}
